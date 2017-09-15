@@ -1,0 +1,46 @@
+\documentclass[a4paper, 10pt]{report}
+\usepackage{ifrovha}
+
+\usepackage{lipsum}
+
+\begin{document}
+\campus{Vilhena}
+\address{\textit{Campus} Vilhena - Rodovia BR-174, Km 3, S/N }{CEP 76.980-000 Vilhena - RO - Brasil}
+
+% Header
+% Variáveis comuns a memo e ata. type: Memorando ou ATA
+\type{ATA}
+%\type{Memorando}
+
+% sender: Curso de Bacharelado em Ciência da Computação ou Departamento Acadêmico de Computação
+\sender{Sender}{Departamento}
+% \sender{Departamento Acadêmico de Computação}{DACOM}
+
+\serial{02/2017}
+\data{01 de setembro de 2017}
+
+% Específicas para Ata. Se não for uma ata não defina.
+\titulo{Ata da Reunião xxxx}
+
+% Específicas para Memorando.
+%\para{Prof. Adriano Lopes Romero (DIRGRAD)}
+%\depto{Diretoria de Graduação e Educação Profissional (DIRGRAD)}
+%\assunto{Prova de Suficiência BCC31A}
+
+% Cria o cabeçalho.
+\memoata
+
+% Escreva seu Texto Aqui.
+\lipsum[1-10]
+
+
+% Para Memorando: Respeitosamente ou Atenciosamente.
+\greetings{Respeitosamente}
+
+% Signatures
+%\doublesignature{Roberto Simplício Guimarães}{Coordenador}{Bruno Rover dal Prá}{}
+%\doublesignature{Ezequiel Ferreira Barbosa}{}{Gleiser Rodrigues de Melo}{}
+%\doublesignature{Marco Antônio Augusto de Andrade}{}{Wagner da Silva Ferreira Filho}{}
+%\signature{Nome do Professor}{Cargo}
+
+\end{document}
